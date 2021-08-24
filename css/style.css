@@ -1044,6 +1044,7 @@ a:focus {
 }
 
 .price .price-prices h2 {
+    color: #EF233C;
     font-size: 45px;
     font-weight: 700;
     margin-left: 10px;
@@ -1058,6 +1059,7 @@ a:focus {
 }
 
 .price .price-prices h2 span {
+    color: #414141;
     margin-left: 1px;
     font-size: 18px;
     font-weight: 400;
