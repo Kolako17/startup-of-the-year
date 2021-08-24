@@ -1,0 +1,41 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?228a9ebc370ca888ae01405169730e2b") format("truetype"),
+url("./flaticon.woff?228a9ebc370ca888ae01405169730e2b") format("woff"),
+url("./flaticon.woff2?228a9ebc370ca888ae01405169730e2b") format("woff2"),
+url("./flaticon.eot?228a9ebc370ca888ae01405169730e2b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?228a9ebc370ca888ae01405169730e2b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "makeup": "\f101",
+    "wax": "\f102",
+    "eye-with-eyelash": "\f103",
+    "eyebrow-pencil": "\f104",
+);
+
+.flaticon-makeup:before {
+    content: map-get($flaticon-map, "makeup");
+}
+.flaticon-wax:before {
+    content: map-get($flaticon-map, "wax");
+}
+.flaticon-eye-with-eyelash:before {
+    content: map-get($flaticon-map, "eye-with-eyelash");
+}
+.flaticon-eyebrow-pencil:before {
+    content: map-get($flaticon-map, "eyebrow-pencil");
+}
